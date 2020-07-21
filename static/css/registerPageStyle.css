@@ -1,0 +1,72 @@
+#body1 {
+    background-color: #bcd6cd;
+
+}
+
+#registrationForm {
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: #FFFFFF;
+	margin-top: 200px;
+	margin-left: 700px;
+	margin-right: 700px;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	text-align: center;
+}
+
+.authField { /* точка означает, что выбран класс authField, указанный в html-документе */
+	background-color: #0FFFFF; /* цвет фона поля авторизации */
+	font-size: 25px; /* font-size - увеличивает размер элемента */
+	border-style: solid; /* border-style - устанавливает тип границы, ее стиль */
+}
+
+#loginRuleMessage { /* требуется для скрытия элемента и последующего появления с помощью функции fadeInLogin для логина и пароля в файле auth.js*/
+  opacity: 0;
+  font-size: 20px;
+  color: #222625;
+}
+
+#passRuleMessage { /* требуется для скрытия элемента и последующего появления с помощью функции fadeInLogin для логина и пароля в файле auth.js*/
+  opacity: 0;
+  font-size: 20px;
+  color: #222625;
+}
+
+#countLoginDiv { 
+	opacity: 0; /* скрывает div с отображением информации о колличестве введенных симолов для логина */
+	font-size: 20px;
+	color: #222625;
+}
+
+#forbiddenLoginSymbols { /* скрывает div с отображением информации о недопустимых введенных симолах для логина */
+	opacity: 0;
+	font-size: 20px;
+	color: #222625;
+}
+
+#countPassDiv { 
+	opacity: 0; /* скрывает div с отображением информации о колличестве введенных симолов для пароля */
+	font-size: 20px;
+	color: #222625;
+}
+
+#forbiddenPassSymbols { /* скрывает div с отображением информации о недопустимых введенных симолах для пароля */
+	opacity: 0;
+	font-size: 20px;
+	color: #222625;
+}
+
+#registrationButton {
+	border-radius: 5px;
+	background-color: #3a1aad;
+	font-size: 25px;
+	color: #0FFFFF;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="./css/registerPageStyle.css" rel="stylesheet" type="text/css"/> 
+	<!-- подключение стилей CSS, атрибуты: href="./css/registerPageStyle.css" - какой файл подключаем, rel="stylesheet" - отношение с файлом, type="text/css" - тип подключаемого файла-->
+</head>
+<body id="body1">
+	<form id="registrationForm">
+	<div></div>	
+	<div><input id="emailField" class="authField" type="text" name="email" size="12" maxlength="40" value="" placeholder="email"/></div>
+	</br>
+	<div><input id="loginField" class="authField" type="text" name="login" size="12" maxlength="10" value="" placeholder="Login"/></div>
+	<!-- class="authField" - объявление класса, для CSS, type="text" - тип данных текст, name="key" - просто имя элемента, size="10" - размер поля в длину, maxlength="15" - максимально возможное количество симолово для ввода данных, value="" - что будет написано по умолчанию в поле -->
+	<div id="loginRuleMessage">Use letters and numbers</div> <!-- отображает правила ниписания логина-->
+	<div id="countLoginDiv">! <span id="countLoginSymbols">0</span> symbols of 6-10</div> <!-- div передается в JS и отображется при количестве симоволов от 0 до 5 включительно, span - передается в JS и отображет количество введенных пользователем символов-->
+	<div id="forbiddenLoginSymbols">! Forbidden symbols</div>
+	</br>
+	<div></div>
+	<div><input id="passField" class="authField" type="password" name="password" size="12" maxlength="10" value="" placeholder="Password"/></div>
+	<div id="passRuleMessage">Use letters and numbers</div> <!-- отображает правила ниписания пароля-->
+	<div id="countPassDiv">! <span id="countPassSymbols">0</span> symbols of 6-10</div> <!-- div передается в JS и отображется при количестве симоволов от 0 до 5 включительно, span - передается в JS и отображет количество введенных пользователем символов-->
+	<div id="forbiddenPassSymbols">! Forbidden symbols</div>
+	<script type="text/javascript" src="./js/authPageStyle.js"></script> <!-- подключение скрипта JS. Скрипт будет работать только для кода выше. Данный скрипт будет работать с формой аутентификации (появление правил ввода символов, проверка корректности логина, пароля, почты) -->
+	<button id="registrationButton">Register</button>
+	<script type="text/javascript" src="./js/uploadRegisterData.js"></script> <!-- подключение скрипта JS. Скрипт будет работать только для кода выше. Данный скрипт будет работать с формой и по клику на кнопку registrationButton будет формировать коректный запрос на сервер-->
+	</form>
+	
+</body>
+</html>

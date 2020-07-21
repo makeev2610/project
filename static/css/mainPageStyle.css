@@ -1,0 +1,63 @@
+body {
+    background-image: url(/images/mramor.JPG);
+    background-size: cover;
+}
+
+.Date {
+    text-align: center;
+    font-family: monospace;
+    font-size:20px;
+    color: #222625;
+}
+
+#imagee{
+    text-align: center;
+}
+
+img {
+    border: 2px solid #222625;
+    border-radius:4px;
+}
+
+.mtable {
+    margin: auto;
+    border: none;
+}
+
+.msymbol {
+    font-size: 300%;
+    color: #222625;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #000000;
+    border-radius:30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.msymbol:hover {
+    background: #222625;
+    color: #9bccb3;
+    border: 2px solid #222625;
+}
+
+#randomButton:hover {
+    background: #222625;
+    color: #9bccb3;
+    border: 2px solid #222625;
+}
+
+#randomButton {
+    color: #000000;
+    font-family: caption;
+    font-size: 23px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    background: transparent;
+}
+
+.mimg {
+    text-align: center;
+}
+
+
